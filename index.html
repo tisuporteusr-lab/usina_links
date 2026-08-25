@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usina Santa Rita S/A Açúcar E Álcool</title>
+  <!-- Favicon Símbolo Oficial Usina Santa Rita -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 450 500'%3E%3Cpath d='M 372 446 C 388 418 438 344 438 235 C 438 105 365 0 240 0 C 165 0 132 75 132 120 C 132 185 280 215 365 300 C 395 330 395 390 372 446 Z' fill='%236C7375'/%3E%3Cpath d='M 68 35 C 52 63 2 137 2 246 C 2 376 75 481 200 481 C 275 481 308 406 308 361 C 308 296 160 266 75 181 C 45 151 45 91 68 35 Z' fill='%2372B100'/%3E%3C/svg%3E" />
+  <meta name="description" content="Canal oficial da Usina Santa Rita S/A - Açúcar e Álcool. Acesse nossas redes sociais, WhatsApp RH, envio de currículos e telefones." />
+  <meta name="theme-color" content="#006837" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1A2F23;
+      background-color: #F4F7F2;
+    }
+    .font-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .toast {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .modal-backdrop {
+      background-color: rgba(26, 47, 35, 0.65);
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#F4F7F2] text-[#1A2F23] selection:bg-[#006837]/20 selection:text-[#006837] flex flex-col items-center justify-center">
+
+  <!-- Subtle Ambient Background -->
+  <div class="fixed inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white via-[#F4F7F2] to-[#E9EFE6] -z-10"></div>
+
+  <!-- Main Centered Linktree Container -->
+  <main class="flex-1 w-full max-w-xl mx-auto px-4 py-6 sm:py-10 flex flex-col items-center">
+    
+    <!-- Profile Card Header -->
+    <div class="w-full bg-white rounded-3xl shadow-sm border border-[#E2E8DE] overflow-hidden mb-6">
+     
+      
+      <div class="h-48 sm:h-60 w-full relative overflow-hidden bg-[#006837]">
+        <!-- Foto da Usina E Efito de Zoom Na Imagem -->
+        <img
+          src="usina.jpg" alt="Parque Industrial Usina Santa Rita"
+          class="w-full h-full object-cover object-center brightness-100 contrast-[1.09] transition-transform duration-1000 hover:scale-125"
+        />
+        <!-- Leve degradê verde de baixo para cima transparente -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#006837]/65 via-[#006837]/20 to-transparent pointer-events-none"></div>
+      </div>
+
+      <!-- Profile Details Area -->
+      <div class="px-6 pb-6 text-center flex flex-col items-center relative">
+        
+      <!-- Logo  -->
+      <div class="w-28 h-28 sm:w-36 sm:h-36 bg-white rounded-3xl p-4 shadow-xl flex items-center justify-center border-4 border-white -mt-14 sm:-mt-18 shrink-0 transition-transform hover:scale-105">
+        <svg viewBox="0 0 450 500" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+        
+          <!-- Folha Cinza (Superior Direita) -->
+        <path d="M 372 446 C 388 418 438 344 438 235 C 438 105 365 0 240 0 C 165 0 132 75 132 120 C 132 185 280 215 365 300 C 395 330 395 390 372 446 Z"fill="#6C7375"/>
+
+        <!-- Folha Verde (Inferior Esquerda) -->
+        <path d="M 68 35 C 52 63 2 137 2 246 C 2 376 75 481 200 481 C 275 481 308 406 308 361 C 308 296 160 266 75 181 C 45 151 45 91 68 35 Z"fill="#72B100"/>
+        </svg>
+      </div>
+
+        <!-- Brand Titles -->
+        <div class="mt-3 space-y-1">
+          <div class="inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-[#EAF2E8] text-[#006837] text-[11px] font-bold uppercase tracking-wider border border-[#D5E5D1]">
+            <svg class="w-3 h-3 text-[#72B100]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            <span>Usina Santa Rita</span>
+          </div>
+          <h1 class="text-2xl sm:text-3xl font-serif italic text-[#1A2F23] leading-tight">
+            Usina Santa Rita S/A Açúcar E Álcool
+          </h1>
+          <p class="text-xs text-gray-500 font-sans tracking-wide">
+            Desde 1926
+          </p>
+        </div>
+
+        <!-- Bio Description -->
+        <p class="text-xs sm:text-sm text-gray-600 font-light max-w-md mt-3 leading-relaxed">
+          Central oficial de comunicação, redes sociais, vagas no setor de Recursos Humanos e atendimento institucional.
+        </p>
+
+        <!-- Location Pill -->
+        <div class="flex items-center gap-1.5 text-xs text-gray-500 mt-2 font-medium">
+          <svg class="w-3.5 h-3.5 text-[#006837]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Santa Rita do Passa Quatro - SP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linktree Button Stack -->
+    <div class="w-full space-y-3">
+      
+      <!-- 1. WHATSAPP RH -->
+      <a
+        href="https://wa.me/5519991891051?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20vagas%20e%20atendimento%20da%20Usina%20Santa%20Rita."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group w-full flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-[#25D366]/5 border-2 border-[#25D366]/40 hover:border-[#25D366] shadow-xs hover:shadow-md transition-all active:scale-[0.99]"
+      >
+        <div class="flex items-center gap-3.5 min-w-0">
+          <div class="w-12 h-12 rounded-2xl overflow-hidden shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="waAppGradSingle" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#31E768" />
+                  <stop offset="100%" stop-color="#1EBE5D" />
+                </linearGradient>
+              </defs>
+              <rect width="100" height="100" rx="22" fill="url(#waAppGradSingle)" />
+              <path
+                d="M 50 13 C 29.565 13 13 29.565 13 50 C 13 57.067 15.008 63.682 18.525 69.317 L 15.358 84.642 L 31.258 81.542 C 36.65 84.717 43.1 87 50 87 C 70.435 87 87 70.435 87 50 C 87 29.565 70.435 13 50 13 Z"
+                fill="none"
+                stroke="white"
+                stroke-width="6.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M 64.65 59.45 C 63.85 59.05 60.1 57.18 59.4 56.92 C 58.7 56.66 58.2 56.52 57.7 57.26 C 57.2 58 55.75 59.85 55.3 60.36 C 54.85 60.87 54.4 60.94 53.6 60.54 C 52.8 60.14 50.25 59.3 47.2 56.58 C 44.85 54.48 43.25 51.9 42.8 51.1 C 42.35 50.3 42.75 49.88 43.15 49.48 C 43.5 49.12 43.95 48.52 44.35 48.02 C 44.75 47.52 44.9 47.16 45.15 46.66 C 45.4 46.16 45.25 45.72 45.05 45.32 C 44.85 44.92 43.35 41.25 42.75 39.75 C 42.15 38.3 41.55 38.5 41.1 38.5 C 40.7 38.5 40.2 38.48 39.7 38.48 C 39.2 38.48 38.4 38.67 37.7 39.42 C 37.0 40.17 35.05 42.02 35.05 45.82 C 35.05 49.62 37.8 53.25 38.2 53.77 C 38.6 54.3 43.6 62.0 51.25 65.3 C 53.05 66.08 54.5 66.55 55.6 66.9 C 57.4 67.48 59.05 67.4 60.35 67.2 C 61.8 66.98 64.8 65.38 65.4 63.68 C 66.0 61.98 66.0 60.52 65.85 60.22 C 65.65 59.92 65.25 59.75 64.65 59.45 Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="text-left min-w-0">
+            <div class="flex items-center gap-1.5">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-[#25D366] bg-[#25D366]/10 px-2 py-0.5 rounded-full">
+                Atendimento RH
+              </span>
+            </div>
+            <h2 class="text-sm font-bold text-[#1A2F23] mt-0.5">
+              WhatsApp Recursos Humanos
+            </h2>
+            <p class="text-xs text-gray-500 font-mono">
+              (19) 99189-1051
+            </p>
+          </div>
+        </div>
+
+        <div class="w-8 h-8 rounded-xl bg-gray-50 group-hover:bg-[#25D366] text-gray-400 group-hover:text-white flex items-center justify-center shrink-0 transition-colors">
+          <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </div>
+      </a>
+
+      <!-- 2. INSTAGRAM OFICIAL -->
+      <a
+        href="https://www.instagram.com/usinasantarita/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group w-full flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-pink-50/30 border border-[#E2E8DE] hover:border-[#E1306C]/60 shadow-xs hover:shadow-md transition-all active:scale-[0.99]"
+      >
+        <div class="flex items-center gap-3.5 min-w-0">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <div class="text-left min-w-0">
+            <div class="flex items-center gap-1.5">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-[#E1306C] bg-pink-50 px-2 py-0.5 rounded-full">
+                Rede Social
+              </span>
+            </div>
+            <h2 class="text-sm font-bold text-[#1A2F23] mt-0.5">
+              Instagram Oficial
+            </h2>
+            <p class="text-xs text-gray-500 font-mono truncate">
+              @usinasantarita
+            </p>
+          </div>
+        </div>
+
+        <div class="w-8 h-8 rounded-xl bg-gray-50 group-hover:bg-[#E1306C] text-gray-400 group-hover:text-white flex items-center justify-center shrink-0 transition-colors">
+          <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </div>
+      </a>
+
+      <!-- 3. LINKEDIN CORPORATIVO -->
+      <a
+        href="https://www.linkedin.com/company/29098230/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group w-full flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-blue-50/30 border border-[#E2E8DE] hover:border-[#0A66C2]/60 shadow-xs hover:shadow-md transition-all active:scale-[0.99]"
+      >
+        <div class="flex items-center gap-3.5 min-w-0">
+          <div class="w-12 h-12 rounded-2xl bg-[#0A66C2] text-white flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </div>
+          <div class="text-left min-w-0">
+            <div class="flex items-center gap-1.5">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-[#0A66C2] bg-blue-50 px-2 py-0.5 rounded-full">
+                Carreiras
+              </span>
+            </div>
+            <h2 class="text-sm font-bold text-[#1A2F23] mt-0.5">
+              LinkedIn Corporativo
+            </h2>
+            <p class="text-xs text-gray-500 font-mono truncate">
+              Usina Santa Rita S/A
+            </p>
+          </div>
+        </div>
+
+        <div class="w-8 h-8 rounded-xl bg-gray-50 group-hover:bg-[#0A66C2] text-gray-400 group-hover:text-white flex items-center justify-center shrink-0 transition-colors">
+          <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </div>
+      </a>
+
+      <!-- 4. FACEBOOK OFICIAL -->
+      <a
+        href="https://www.facebook.com/profile.php?id=100083152397699&locale=pt_BR"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group w-full flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-indigo-50/30 border border-[#E2E8DE] hover:border-[#1877F2]/60 shadow-xs hover:shadow-md transition-all active:scale-[0.99]"
+      >
+        <div class="flex items-center gap-3.5 min-w-0">
+          <div class="w-12 h-12 rounded-2xl bg-[#1877F2] text-white flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.667 5H18V0h-3.889C10.61 0 9 1.583 9 4.615V8z"/></svg>
+          </div>
+          <div class="text-left min-w-0">
+            <div class="flex items-center gap-1.5">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-[#1877F2] bg-indigo-50 px-2 py-0.5 rounded-full">
+                Página Oficial
+              </span>
+            </div>
+            <h2 class="text-sm font-bold text-[#1A2F23] mt-0.5">
+              Facebook Oficial
+            </h2>
+            <p class="text-xs text-gray-500 font-mono truncate">
+              Usina Santa Rita S/A
+            </p>
+          </div>
+        </div>
+
+        <div class="w-8 h-8 rounded-xl bg-gray-50 group-hover:bg-[#1877F2] text-gray-400 group-hover:text-white flex items-center justify-center shrink-0 transition-colors">
+          <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </div>
+      </a>
+
+      <!-- 5. ENVIO DE CURRÍCULOS -->
+      <a
+        href="mailto:curriculos@usinasantarita.com.br?subject=Envio%20de%20Curr%C3%ADculo%20-%20Usina%20Santa%20Rita&body=Ol%C3%A1%20equipe%20de%20RH%20da%20Usina%20Santa%20Rita%2C%0A%0ASegue%20em%20anexo%20meu%20curr%C3%ADculo%20para%20an%C3%A1lise.%0A%0ANome%3A%20%0A%C3%81rea%20de%20Interesse%3A%20%0ATelefone%20de%20Contato%3A%20"
+        class="group w-full flex items-center justify-between p-4 rounded-2xl bg-white hover:bg-emerald-50/30 border border-[#E2E8DE] hover:border-[#006837]/60 shadow-xs hover:shadow-md transition-all active:scale-[0.99]"
+      >
+        <div class="flex items-center gap-3.5 min-w-0">
+          <div class="w-12 h-12 rounded-2xl bg-[#006837]/10 text-[#006837] flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 group-hover:bg-[#006837] group-hover:text-white transition-all">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div class="text-left min-w-0">
+            <div class="flex items-center gap-1.5">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-[#006837] bg-[#006837]/10 px-2 py-0.5 rounded-full">
+                Banco de Talentos
+              </span>
+            </div>
+            <h2 class="text-sm font-bold text-[#1A2F23] mt-0.5">
+              Enviar Currículo por E-mail
+            </h2>
+            <p class="text-xs text-gray-500 font-mono truncate">
+              curriculos@usinasantarita.com.br
+            </p>
+          </div>
+        </div>
+
+        <div class="w-8 h-8 rounded-xl bg-gray-50 group-hover:bg-[#006837] text-gray-400 group-hover:text-white flex items-center justify-center shrink-0 transition-colors">
+          <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </div>
+      </a>
+
+      <!-- 6. TELEFONE -->
+      <div class="w-full flex items-center justify-between p-4 rounded-2xl bg-white border border-[#E2E8DE] shadow-xs">
+        <a
+          href="tel:+551935849000"
+          class="flex items-center gap-3.5 min-w-0 flex-1 hover:opacity-80 transition-opacity"
+        >
+          <div class="w-12 h-12 rounded-2xl bg-[#006837]/10 text-[#006837] flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="text-left min-w-0">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full">
+              Central Telefônica
+            </span>
+            <h2 class="text-sm font-bold text-[#1A2F23] mt-0.5">
+              Fale Conosco
+            </h2>
+            <p class="text-xs text-gray-500 font-mono truncate">
+              (019) 3584-9000
+            </p>
+          </div>
+        </a>
+
+        <div class="flex items-center gap-1.5 shrink-0 pl-2">
+          <button
+            type="button"
+            onclick="copyText('+551935849000', 'Telefone PABX')"
+            class="p-2 rounded-xl bg-[#F4F7F2] hover:bg-[#E8ECE6] text-gray-600 hover:text-[#006837] transition-all cursor-pointer"
+            title="Copiar número de telefone"
+          >
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+          </button>
+
+          <a
+            href="tel:+551935849000"
+            class="p-2 rounded-xl bg-[#006837] hover:bg-[#00502a] text-white transition-all active:scale-95"
+            title="Ligar agora"
+          >
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+       <!-- Footer -->
+    <footer class="mt-6 text-center text-xs text-gray-500 space-y-1.5">
+      <p class="font-semibold text-[#1A2F23]">
+        Usina Santa Rita S/A - Açúcar e Álcool
+      </p>
+      <p class="text-[11px] text-gray-400">
+        Santa Rita do Passa Quatro - SP • CNPJ 45.353.547/0001-09
+      </p>
+      <p class="text-[11px] text-emerald-800/70 pt-1">
+        © <span id="current-year"></span> Usina Santa Rita • Todos os direitos reservados.
+      </p>
+    </footer>
+     <!-- Localização no Google Maps -->
+    <div class="mt-8 flex justify-center">
+      <a
+        href="https://maps.google.com/?q=Usina+Santa+Rita+S%2FA+A%C3%A7%C3%BAcar+e+%C3%81lcool+-+Via+Anhanguera+Km+245,+Santa+Rita+do+Passa+Quatro+-+SP"
+        target="_blank"
+        rel="noopener noreferrer"
+        id="btn-maps-footer"
+        class="inline-flex items-center gap-2.5 px-6 py-3 rounded-2xl bg-white hover:bg-[#F0F4EE] text-[#006837] border border-[#D5E2D1] text-xs font-bold uppercase tracking-wider transition-all shadow-xs hover:shadow-md hover:border-[#006837]/40 active:scale-95 cursor-pointer group"
+      >
+        <div class="w-6 h-6 rounded-lg bg-[#EA4335]/10 text-[#EA4335] group-hover:bg-[#EA4335] group-hover:text-white flex items-center justify-center transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <span>Nossa Localização</span>
+        <svg class="w-3.5 h-3.5 text-gray-400 group-hover:text-[#006837] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+    </div>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-msg');
+      toastMsg.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    function copyText(text, label) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast((label || 'Item') + ' copiado para a área de transferência!');
+      });
+    }
+
+    function copyUrl() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        showToast('Link da página copiado com sucesso!');
+      });
+    }
+
+    
+
+    function downloadVCard() {
+      const vcardData = `BEGIN:VCARD
+VERSION:3.0
+N:Rita;Usina Santa;;;
+FN:Usina Santa Rita
+ORG:Usina Santa Rita S/A - Açúcar e Álcool
+TITLE:Canal Oficial de Atendimento & RH
+TEL;TYPE=WORK,VOICE:(019) 3584-9000
+TEL;TYPE=CELL,WHATSAPP,MSG:+5519991891051
+EMAIL;TYPE=WORK,PREF:curriculos@usinasantarita.com.br
+URL;TYPE=INSTAGRAM:https://www.instagram.com/usinasantarita/
+URL;TYPE=LINKEDIN:https://www.linkedin.com/company/29098230/
+URL;TYPE=FACEBOOK:https://www.facebook.com/profile.php?id=100083152397699&locale=pt_BR
+ADR;TYPE=WORK:;;Fazenda Santa Rita s/n;Santa Rita do Passa Quatro;SP;13670-000;Brasil
+NOTE:Usina Santa Rita - Açúcar e Álcool. Desde 1926
+END:VCARD`;
+
+      const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8;' });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'Usina-Santa-Rita-Oficial.vcf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+      showToast('Contato vCard baixado com sucesso!');
+    }
+  </script>
+</body>
+</html>
